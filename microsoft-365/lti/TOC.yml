@@ -1,3 +1,4 @@
+items:
     - name: Microsoft 365 LTI 
       href: index.md
     - name: Microsoft LMS Gateway management
@@ -8,6 +9,8 @@
       items:
       - name: Use Microsoft OneDrive LTI with Canvas 
         href: onedrive-lti.md
+      - name: Use Microsoft Teams Assignments with Canvas
+        href: teams-assignments-with-canvas.md
       - name: Use Microsoft Teams classes with Canvas 
         href: teams-classes-with-canvas.md
       - name: Use Microsoft Teams meetings with Canvas 
@@ -18,6 +21,8 @@
       items:
       - name: Use Microsoft OneDrive LTI with Blackboard
         href: onedrive-lti-blackboard.md
+      - name: Use Microsoft Teams Assignments with Blackboard  
+        href: teams-assignments-with-blackboard.md
       - name: Use Microsoft Teams meetings with Blackboard Learn
         href: teams-meetings-with-blackboard-learn.md
       - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
@@ -50,6 +55,8 @@
       items:
       - name: Use Microsoft OneDrive LTI with Schoology Learning
         href: onedrive-lti-schoology.md
+      - name: Use Microsoft Teams Assignments with Schoology Learning
+        href: teams-assignments-with-schoology.md 
       - name: Use Microsoft Teams meetings with Schoology Learning
         href: teams-classes-and-meetings-with-schoology.md
       - name: Use Microsoft Reflect LTI with Schoology Learning

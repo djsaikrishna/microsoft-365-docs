@@ -24,13 +24,14 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: "Learn how to find a new Microsoft 365 partner, or get contact information for a partner you worked with previously."
-ms.date: 11/16/2023
+ms.date: 01/07/2025
 ---
 
 # Find your Microsoft 365 subscriptions partner or reseller
@@ -41,7 +42,9 @@ As an admin, you can work with a partner to buy, activate, and renew Microsoft 3
   
 ## Before you begin
 
-You must be a Global admin to do the tasks described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+You must be a Global Administrator to do the tasks described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Find a new partner or reseller
 

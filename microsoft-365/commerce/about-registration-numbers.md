@@ -22,8 +22,9 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- campaignIDs-batch1
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
-ms.date: 08/24/2023
+ms.date: 09/05/2024
 ---
 
 # About registration numbers and under-review notifications in the Microsoft 365 admin center

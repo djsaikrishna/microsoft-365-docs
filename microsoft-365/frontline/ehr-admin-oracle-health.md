@@ -45,7 +45,7 @@ This article describes how to set up and configure the Teams EHR connector to in
 > [!NOTE]
 > Cerner has been renamed to Oracle Health. The following video refers to Oracle Health as Cerner.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=150a83b3-76f0-4c83-b83d-1c6176b17fcd]
 
 ## Before you begin
 
@@ -59,7 +59,7 @@ Oracle Health integration is currently only available in the United States.
 - An active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
+- Identified a person in your organization who is a Microsoft 365 Global Administrator with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - Oracle Health version November 2018 or later
 - Contact Microsoft at teamsforhealthcare@service.microsoft.com to get enrolled in the Oracle Cerner Code program.
@@ -77,7 +77,7 @@ The connector setup requires that you:
 - [Review and finish the configuration](ehr-admin-cerner.md#review-and-finish-the-configuration)
 
 > [!IMPORTANT]
-> These steps must be completed by the Microsoft 365 global admin in your organization.  
+> These steps must be completed by the Microsoft 365 Global Administrator in your organization.  
 
 ### Launch the EHR connector configuration portal
 

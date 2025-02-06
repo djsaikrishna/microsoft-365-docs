@@ -40,11 +40,19 @@ This article describes error messages and problems that you might encounter whil
 
 **Resolution:** For a complete list of qualifications and requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). If you qualify to access Lighthouse and believe you received this message in error, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### Message when signing in to Lighthouse: "Accept the Partner Amendment"
+### Message when signing in to Lighthouse: "Microsoft 365 Lighthouse was removed for your organization"
 
-**Cause:** You attempted to access Lighthouse before a Global Administrator in the partner tenant has signed the partner amendment.
+**Cause:** Microsoft 365 Lighthouse is disabled in your partner tenant.
 
-**Resolution:** A Global Administrator must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global Administrator has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolution:** To allow the use of Microsoft 365 Lighthouse, reach out to an admin in your partner tenant and ask them to follow these steps:
+
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials.
+    
+2. In the left navigation pane, select **Settings** > **Org settings**.
+
+3. On the **Services** tab, select **Microsoft 365 Lighthouse** from the list of services, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in your tenant.
+
+4. Select **Save**.
 
 ## Customer tenant onboarding  
 
@@ -59,7 +67,7 @@ This article describes error messages and problems that you might encounter whil
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
-Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
+Either granular delegated administrative privileges (GDAP) plus an indirect reseller relationship or a delegated administrative privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
@@ -76,15 +84,15 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Microsoft Entra ID, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to hold the Administrator role in Lighthouse. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
-For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
+For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users - Partner Center](/partner-center/permissions-overview).
 
 ### I don't see complete data in certain areas of Lighthouse, or I can't perform certain tasks, or I can't access certain tenants
 
 **Cause:** You have limited GDAP access based on the roles assigned to the Microsoft Entra security group that you're in.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Microsoft Entra ID. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant assigned you to the correct GDAP security group in Microsoft Entra ID. Also, keep in mind that some actions in Lighthouse require you to hold the Administrator role in Lighthouse. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## GDAP setup and management
 
@@ -92,7 +100,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
 
-**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Microsoft Entra ID) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Administrator (assigned in Lighthouse) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant - Partner Center](/partner-center/partner-security-requirements-mandating-mfa).
 
 You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
 
@@ -106,7 +114,7 @@ You should also make sure Conditional Access policies configured in the customer
 
 **Cause:** The **User type** field in your Microsoft Entra ID account is either blank or set to *Guest*.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has set **User type** to *Member* in your Microsoft Entra ID account.
+**Resolution:** Make sure that an admin from your partner tenant has set **User type** to *Member* in your Microsoft Entra ID account.
 
 ## Customer tenant management  
 
@@ -158,7 +166,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause:** You don't have the correct permissions in Partner Center to view the Sales Advisor pages in Lighthouse.
 
-**Resolution:** Verify that you have either the Report viewer or Executive report viewer role for one or more Microsoft Cloud Partner Program locations in Partner Center. Only someone with the Global admin role in Partner Center can assign these roles. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
+**Resolution:** Verify that you hold the Account Manager role in Lighthouse. If you don't hold the Account Manager role, reach out to someone who holds the Administrator role in Lighthouse and ask them to assign the role to you. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
 
 ### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "There are no opportunities"
 
@@ -174,7 +182,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause 1:** Microsoft 365 Lighthouse hasn't been deployed in your partner tenant yet.
 
-**Resolution:** Work with a Global Administrator in your partner tenant to deploy Lighthouse. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+**Resolution:** Work with someone who holds the Administrator role in Lighthouse to deploy Lighthouse in your partner tenant. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 **Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
 

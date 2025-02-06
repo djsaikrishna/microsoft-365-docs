@@ -10,7 +10,7 @@ f1.keywords:
 manager: dougeby
 ms.date: 04/17/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -38,7 +38,7 @@ On the other hand, if your environment includes plans for co-management includin
 Watch this video for an overview of the deployment process.
 <br>
 <br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=097c2f27-684b-4fef-96d8-55282ea3cad0]
 
 ## Why manage endpoints?
 

@@ -38,7 +38,7 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
+2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](#set-up-microsoft-365-business-premium).
 
@@ -72,7 +72,7 @@ To complete the basic setup process, you can choose from several options availab
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ title="Set up Microsoft 365 for business"]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de65e64a-e0d9-4f67-bc18-05d777b85e0b title="Set up Microsoft 365 for business"]
 
 ### The guided setup process, step by step
 

@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/09/2024
+ms.date: 09/19/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,14 +14,13 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the autofill columns service in Microsoft Syntex.
 ---
 
 # Overview of autofill columns in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2025, you can try out autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out a [limited amount](promo-syntex.md#monthly-included-capacity) of autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models (LLMs) through generative AI, autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
 
@@ -66,7 +65,7 @@ Currently, autofill columns are not available for the following column data type
 
 - Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
 
-- Documents with sensitivity labels aren't analyzed or included in the results.
+- Encrypted files aren't analyzed or included in the results.
 
 - Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 
@@ -93,9 +92,9 @@ Autofill columns allow a saved prompt to be used to process files created or upl
 
 #### What are the intended uses of autofill columns?
 
-Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a users could supplement the extracted metadata from a configured model with a summary or other analysis response.
+Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a user could supplement the extracted metadata from a configured model with a summary or other analysis response.
 
-#### How was autofill columns evaluated? What metrics were used to measure performance?
+#### How were autofill columns evaluated? What metrics were used to measure performance?
 
 - Performance factors such as coherence, fluency, and accuracy relied on the base model’s performance (in this case, GPT-4 Turbo).
 
@@ -119,7 +118,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
         - Evaluated test cases with harmful content, and questions prompting the model to answer something it shouldn’t. For example, “Summarize the content in the document.”
 
-    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Studio, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
+    - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Foundry portal, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
 
         The evaluation rated the inputs and outputs 0-7, scaling from the least harmful to the most severe level.
 
