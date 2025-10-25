@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 10/06/2025
+ms.date: 10/24/2025
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -94,6 +94,9 @@ The integration steps are performed by the following people in your organization
 - **Epic customer analyst**: A person in your organization who has login credentials to Epic. They approve the configuration settings entered by the admin and provide the configuration records to Epic.
 
 The Microsoft 365 admin and Epic customer analyst can be the same person.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role. To learn more, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Set up the Teams EHR connector
 

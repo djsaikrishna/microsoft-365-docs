@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/26/2023
+ms.date: 10/24/2025
 ---
 
 # Appointments with Microsoft Teams
