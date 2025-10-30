@@ -136,7 +136,7 @@ items:
   - name: Microsoft 365 Copilot Search FAQ
     href: microsoft-365-copilot-search-faq.yml
   - name: Connect organizational asset library to Microsoft 365 Copilot Search
-    href: microsoft-365-copilot-search-image-tagging-integration.md   
+    href: microsoft-365-copilot-search-image-tagging-integration.md    
 - name: Microsoft 365 Copilot in Microsoft Teams
   items:
   - name: Overview of AI in Microsoft Teams
@@ -161,12 +161,18 @@ items:
     href: /viva/copilot/viva-copilot-overview?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
   - name: Manage access to Microsoft 365 Copilot in Viva
     href: /viva/copilot/copilot-access-management?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
-- name: Microsoft 365 Copilot Researcher
-  items:
-  - name: Overview of Microsoft 365 Copilot Researcher
+- name: Microsoft 365 Copilot Researcher agent
+  items:   
+  - name: Overview of Microsoft 365 Researcher agent
     href: researcher-agent.md
-  - name: Microsoft 365 Copilot Researcher Agent FAQ
+  - name: Microsoft 365 Copilot Researcher agent FAQ
     href: faq-researcher.yml
+  - name: Researcher Agent with Computer Use
+    items:
+      - name: Microsoft 365 Copilot Researcher agent with Computer Use
+        href: researcher-agent-computer-use.md
+      - name: Microsoft 365 Copilot Researcher agent with Computer Use FAQ
+        href: researcher-agent-computer-use-faq.yml
 - name: Maximize the value of Microsoft 365 Copilot
   items:
   - name: Reports and insights
@@ -185,6 +191,8 @@ items:
     href: microsoft-365-copilot-ai-security.md
   - name: Manage harmful content protection settings for Microsoft 356 Copilot Chat
     href: harmful-content-protection-copilot-chat.md  
+  - name: Manage generative AI apps for your organization
+    href: manage-generative-ai-apps.md
   - name: Apply principles of Zero Trust to Microsoft 365 Copilot
     href: /security/zero-trust/copilots/zero-trust-microsoft-365-copilot?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fbreadcrumb%2Ftoc.json
   - name: Enterprise data protection

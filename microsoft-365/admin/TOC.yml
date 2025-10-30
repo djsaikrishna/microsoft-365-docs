@@ -288,20 +288,18 @@ items:
               href: activity-reports/activity-reports.md
             - name: Active Users
               href: activity-reports/active-users-ww.md
-            - name: Agent usage in Microsoft 365 Copilot
-              href: activity-reports/agent-usage.md
             - name: Microsoft browser usage
               href: activity-reports/browser-usage-report.md
             - name: Microsoft 365 Copilot readiness
               href: activity-reports/microsoft-365-copilot-readiness.md
             - name: Microsoft 365 Copilot usage
               href: activity-reports/microsoft-365-copilot-usage.md
+            - name: Microsoft 365 Copilot Agent usage
+              href: activity-reports/microsoft-365-copilot-agents.md
             - name: Microsoft 365 Copilot Chat usage
               href: activity-reports/microsoft-copilot-usage.md
             - name: Microsoft 365 Copilot Search usage
               href: activity-reports/microsoft-365-copilot-search-usage.md
-            - name: Agent usage
-              href: activity-reports/microsoft-365-copilot-agents-new.md           
             - name: Microsoft 365 Copilot credits
               href: activity-reports/microsoft-365-copilot-credits.md              
             - name: Dynamics 365 Customer Voice activity
@@ -415,7 +413,7 @@ items:
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md
             - name: Manage agents for Copilot
-              href: manage/manage-copilot-agents-integrated-apps.md
+              href: manage/manage-copilot-agents-integrated-apps.md 
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -590,7 +588,7 @@ items:
       items:
         - name: Get support for Microsoft 365 for business
           href: get-help-support.md
-        - name: Case creation and diagnostic data
+        - name: Case creation and data access
           href: support-diagnostic-information-collection.md
     - name: Find support phone numbers
       href: https://support.microsoft.com/topic/customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2#ID0EBBD=signinorgid

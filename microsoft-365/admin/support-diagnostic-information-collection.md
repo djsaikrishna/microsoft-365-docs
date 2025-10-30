@@ -1,9 +1,9 @@
 ---
-title: "Understanding Microsoft 365 case creation and diagnostic data access"
+title: "Understanding Microsoft 365 case creation and data access"
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/30/2025
+ms.date: 10/24/2025
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-business
@@ -16,26 +16,27 @@ ms.collection:
 description: "Learn about the diagnostic data Microsoft 365 Support engineers access to resolve support cases, including consent, data categories, retention periods, and logging details."
 ---
 
-# Understanding Microsoft 365 case creation and diagnostic data access
+# Understanding Microsoft 365 case creation and data access
 
-> [!IMPORTANT]
-> **Based on customer feedback, Microsoft is rolling back and evaluating the following feature**:
-> 
-> When you create a support request and you grant advanced diagnostic consent, you see a notification that cross-tenant access settings were updated due to a partner addition. The notification occurs because the Microsoft Support tenant (`Office365ConciergeSupport.onmicrosoft.com - b4c546a4-7dac-46a6-a7dd-ed822a11efd3`) is added as a service provider for the duration of active support requests in your tenant. Expect to see audit logs in these categories:
-> 
-> - `Policy`
-> - `CrossTenantAccessSettings`
-> - `DelegatedAdminServiceProviderConstraints`
-
-The purpose of this article is to inform Microsoft 365 customers about the type of information that Microsoft Support engineers may collect and use in order to resolve a support case.
+This article describes consent that's granted to Microsoft when a support case is opened, the types of data that can be accessed and for how long, and how support activities are logged.
 
 ## Consent for diagnostic information
 
-When you [create a support request](get-help-support.md), you consent to allow a Microsoft Support engineer to remotely run diagnostics on the Microsoft 365 subscription(s) associated with your request. This access allows them to collect diagnostic information that enables them to troubleshoot and solve your problem.
+When a user contacts [Microsoft Support](get-help-support.md), consent is implied that Microsoft will be granted access to limited tenant information that's needed to support your issue. When a user selects **Contact Me**, cross-tenant access is initiated in your organization's tenant. This access allows Microsoft Support to collect diagnostic information that helps with troubleshooting and resolving issues.
+
+## What happens when cross-tenant access is granted to Microsoft Support?
+
+When a user creates a support request, cross-tenant access is granted to Microsoft Support. That access is time bound and uses least-privileged access, in accordance with [Zero Trust principles](/security/zero-trust/zero-trust-overview). 
+
+Here are some important points to keep in mind:
+
+- Microsoft Support engineers can access only the specific resources needed for diagnostics and troubleshooting. 
+- When a user creates a support request, that user's level of access doesn't change. For example, if the user has a nonprivileged role, their general restrictions don't change because of the support request.
+- All support activity is logged in the Microsoft Entra audit and sign-in logs. (See the section, [Where is support activity on a customer tenant logged?](#where-is-support-activity-on-a-customer-tenant-logged) (in this article).)
 
 ## How long does Microsoft have this access?
 
-Access is removed automatically when your support request is closed. If your request is still open, access is removed 30 days from the date of request creation, and you will be prompted to provide access again. If you have multiple requests open, the access expires 30 days from the date of creation of the latest request.
+Access is removed automatically when your support case is closed. If your case isn't closed 30 days after the request is created, access will be removed, and you'll be prompted to provide access again. If you have multiple cases open, access expires 30 days after the latest support request was created.
 
 Depending on the nature of your support request, the data that Microsoft can access would belong under one or more of the following categories:
 
@@ -50,9 +51,21 @@ Depending on the nature of your support request, the data that Microsoft can acc
 
 ## How long is diagnostic data retained in Microsoft systems?
 
-Microsoft retains diagnostic data for up to 28 days after it is collected. After this period, the data is deleted.
+Microsoft retains diagnostic data for up to 28 days after it's collected. After this period, the data is deleted.
 
 ## Where is support activity on a customer tenant logged?
 
-Activity performed on a customer tenant is available under Microsoft Entra Audit logs.
+Activity performed on a customer tenant is available under Microsoft Entra audit logs. The following table describes log entries that are created.
 
+| Scenario | Audit log details |
+|--|--|
+| A support case is created and cross-tenant access is granted | **Activity type**: Add a partner to cross-tenant access setting<br/>**Category**: `CrossTenantAccessSettings`<br/>**Initiated by (actor)**: <br/>- **Type**: `Application` <br/>- **Display Name**: `EntraGDAP`<br/><br/>**Activity Type**: Add allowed assignable roles<br/>**Category**: `DelegatedAdminServiceProviderConstraints`<br/>**Initiated by (actor)**: <br/>- **Type**: Application <br/>- **Display Name**: `EntraGDAP` |
+| A support engineer signs in to investigate and troubleshoot an issue | An entry each time: <br/>- A support engineer signs in <br/>- Diagnostics that involve operations are run<br/><br/>**Initiated by (actor)**:<br/>- **Type**: `Application`<br/>- **Display Name**: `AssistAPI`  |
+| Access is removed | **Activity type**: Delete allowed assignable roles<br/>**Category**: `DelegatedAdminServiceProviderConstraints`<br/>**Initiated by (actor)**: <br/>- **Type**: `Application` <br/>- **Display Name**: `EntraGDAP`<br/><br/>**Activity type**: Delete partner specific cross-tenant access setting<br/>**Category**: `CrossTenantAccessSettings`<br/>**Initiated by (actor)**: <br/>- **Type**: `Application` <br/>- **Display Name**: `EntraGDAP` |
+
+## Learn more about audit logs
+
+See the following resources for more information about the audit logs:
+
+- [What are Microsoft Entra audit logs?](/entra/identity/monitoring-health/concept-audit-logs)
+- [How to customize and filter identity activity logs](/entra/identity/monitoring-health/howto-customize-filter-logs)

@@ -14,7 +14,6 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
 - m365copilot
 - magic-ai-copilot
 - operations-pod

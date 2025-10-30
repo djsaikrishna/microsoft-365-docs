@@ -23,6 +23,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn about agent usage in your Microsoft 365 environment and gain insights into the activity in your organization."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Microsoft 365 reports in the admin center – Agent usage
